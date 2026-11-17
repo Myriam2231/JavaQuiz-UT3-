@@ -73,21 +73,48 @@ public class App {
 
 
         //pregunta 1
+    System.out.println("-----------------cuarta ronda---------------");
+    System.out.println("Cuarta pregunta: ¿Cuál es el prefijo que usamos para declarar una constante?");
+    System.out.println(" 1) String   2) final   3) static");
+    System.out.print("Respuesta: ");
 
-
+    int respuesta4 = teclado.nextInt();
+    if (respuesta4 == 2){
+        System.out.println("¡Correcto!");
+        aciertos++;
+        }else{
+            System.out.println("incorrecto");
+    }
 
         //pregunta2
+    System.out.println("-----------------quinta ronda---------------");
+    System.out.println("Quinta pregunta: ¿Qué bucle normalmente recorre un array multidimensional?");
+    System.out.println(" 1) int    2) while   3) for");
+    System.out.print("Respuesta: ");
 
-
-
-
+    int respuesta5 = teclado.nextInt();
+    if (respuesta5 == 3){
+        System.out.println("¡Correcto!");
+        aciertos++;
+        }else{
+            System.out.println("incorrecto");
+    }   
         //pregunta3
+    System.out.println("-----------------sexta ronda---------------");
+    System.out.println("Quinta pregunta: ¿Cuál de estos NO es un dato primitivo?");
+    System.out.println(" 1) long     2) String   3) char ");
+    System.out.print("Respuesta: ");
 
-
-
-
+    int respuesta6 = teclado.nextInt();
+    if (respuesta6 == 2){
+        System.out.println("¡Correcto!");
+        aciertos++;
+        }else{
+            System.out.println("incorrecto");
+    }  
         //resultado final
-
+    System.out.println("Respuestas correctas: " + aciertos + " de 6");
+    System.out.println("Fin del concurso.");
 
 
 
