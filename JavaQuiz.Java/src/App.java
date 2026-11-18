@@ -10,7 +10,7 @@ public class App {
        int aciertos = 0;
 
         
-    System.out.println("========== JAVAQUIZ ==========");
+    System.out.println(ROJO +" ========== JAVAQUIZ =========="+RESET);
     System.out.println("Bienvenido a el concurso de preguntas sobre Java");
     System.out.println("Responde escribiendo 1, 2 o 3.");
 
@@ -27,10 +27,10 @@ public class App {
          int respuesta1 = teclado.nextInt() ;
 
                 if (respuesta1 == 1) {
-                   System.out.println("¡Correcto!");
+                   System.out.println(VERDE +"¡Correcto!"+RESET);
                    aciertos++;
                  }else{
-                   System.out.println("incorrecto");
+                   System.out.println(ROJO+"incorrecto"+RESET);
               }
 
 
@@ -45,10 +45,10 @@ public class App {
          int respuesta2 = teclado.nextInt() ;
 
                if (respuesta2 == 3) {
-                  System.out.println("¡Correcto!");
+                  System.out.println(VERDE+"¡Correcto!"+RESET);
                   aciertos++;
                 }else{
-                    System.out.println("incorrecto");
+                    System.out.println(VERDE+"incorrecto"+RESET);
                }
 
         //pregunta 3
@@ -62,10 +62,10 @@ public class App {
              int respuesta3 = teclado.nextInt() ;
 
                if (respuesta3 == 1) {
-                  System.out.println("¡Correcto!");
+                  System.out.println(VERDE+"¡Correcto!"+RESET);
                   aciertos++;
                 }else{
-                   System.out.println("incorrecto");
+                   System.out.println(ROJO+"incorrecto"+RESET);
               }
 
         //inicio ronda2
@@ -80,10 +80,10 @@ public class App {
 
     int respuesta4 = teclado.nextInt();
     if (respuesta4 == 2){
-        System.out.println("¡Correcto!");
+        System.out.println(VERDE+"¡Correcto!"+RESET);
         aciertos++;
         }else{
-            System.out.println("incorrecto");
+            System.out.println(ROJO+"incorrecto"+RESET);
     }
 
         //pregunta2
@@ -94,10 +94,10 @@ public class App {
 
     int respuesta5 = teclado.nextInt();
     if (respuesta5 == 3){
-        System.out.println("¡Correcto!");
+        System.out.println(VERDE+"¡Correcto!"+RESET);
         aciertos++;
         }else{
-            System.out.println("incorrecto");
+            System.out.println(ROJO+"incorrecto"+RESET);
     }   
         //pregunta3
     System.out.println("-----------------sexta ronda---------------");
@@ -107,10 +107,10 @@ public class App {
 
     int respuesta6 = teclado.nextInt();
     if (respuesta6 == 2){
-        System.out.println("¡Correcto!");
+        System.out.println(ROJO+"¡Correcto!"+RESET);
         aciertos++;
         }else{
-            System.out.println("incorrecto");
+            System.out.println(VERDE+"incorrecto"+RESET);
     }  
         //resultado final
     System.out.println("Respuestas correctas: " + aciertos + " de 6");
@@ -118,34 +118,13 @@ public class App {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
      teclado.close();
      
     }
+
+
+//color rojo y verde Y RESET 
+    public static final String RESET = "\u001B[0m";
+    public static final String ROJO = "\u001B[31m";
+    public static final String VERDE = "\u001B[32m";
 }
