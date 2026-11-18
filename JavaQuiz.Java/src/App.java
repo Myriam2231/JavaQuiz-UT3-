@@ -10,7 +10,7 @@ public class App {
        int aciertos = 0;
 
         
-    System.out.println(ROJO +" ========== JAVAQUIZ =========="+RESET);
+    System.out.println(CYAN +" ========== JAVAQUIZ =========="+RESET);
     System.out.println("Bienvenido a el concurso de preguntas sobre Java");
     System.out.println("Responde escribiendo 1, 2 o 3.");
 
@@ -48,7 +48,7 @@ public class App {
                   System.out.println(VERDE+"¡Correcto!"+RESET);
                   aciertos++;
                 }else{
-                    System.out.println(VERDE+"incorrecto"+RESET);
+                    System.out.println(ROJO+"incorrecto"+RESET);
                }
 
         //pregunta 3
@@ -107,10 +107,10 @@ public class App {
 
     int respuesta6 = teclado.nextInt();
     if (respuesta6 == 2){
-        System.out.println(ROJO+"¡Correcto!"+RESET);
+        System.out.println(VERDE+"¡Correcto!"+RESET);
         aciertos++;
         }else{
-            System.out.println(VERDE+"incorrecto"+RESET);
+            System.out.println(ROJO+"incorrecto"+RESET);
     }  
         //resultado final
     System.out.println("Respuestas correctas: " + aciertos + " de 6");
@@ -127,4 +127,5 @@ public class App {
     public static final String RESET = "\u001B[0m";
     public static final String ROJO = "\u001B[31m";
     public static final String VERDE = "\u001B[32m";
+    public static final String CYAN = "\u001B[36m";
 }
