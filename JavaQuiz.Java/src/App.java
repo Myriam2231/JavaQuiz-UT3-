@@ -112,11 +112,42 @@ public class App {
         }else{
             System.out.println(ROJO+"incorrecto"+RESET);
     }  
+//añadimos mas preguntas
+
+
+
+    System.out.println("-----------------septima ronda---------------");
+    System.out.println("¿Qué comando permite descargar un repositorio remoto por primera vez?");
+    System.out.println(" 1) git init     2) git clone   3) git all . ");
+    System.out.print("Respuesta: ");
+
+    int respuesta7 = teclado.nextInt();
+    if (respuesta7 == 1){
+        System.out.println(VERDE+"¡Correcto!"+RESET);
+        aciertos++;
+        }else{
+            System.out.println(ROJO+"incorrecto"+RESET);
+
+        }
+
+
+     System.out.println("-----------------octava ronda---------------");
+    System.out.println("¿Qué comando se utiliza para guardar cambios en el historial de Git?");
+    System.out.println(" 1) git push    2) git pull   3) git commit ");
+    System.out.print("Respuesta: ");
+
+    int respuesta8 = teclado.nextInt();
+    if (respuesta8 == 3){
+        System.out.println(VERDE+"¡Correcto!"+RESET);
+        aciertos++;
+        }else{
+            System.out.println(ROJO+"incorrecto"+RESET);
+
+        }
+
         //resultado final
     System.out.println("Respuestas correctas: " + aciertos + " de 6");
     System.out.println("Fin del concurso.");
-
-
 
      teclado.close();
      
