@@ -17,7 +17,7 @@ public class App {
     //inicio ronda1
 
     //pregunta1
-    System.out.println("-----------------primera ronda---------------");
+    System.out.println("-----------------Primera ronda---------------");
 
         System.out.println("Primera pregunta:¿Qué instrucción sirve para mostrar texto por pantalla? ");
         
@@ -35,7 +35,7 @@ public class App {
 
 
         //pregunta2
-    System.out.println("-----------------segunda ronda---------------");
+    System.out.println("-----------------Segunda ronda---------------");
 
         System.out.println("Segunda pregunta:¿Qué hace aciertos++?");
         System.out.println("1) Resta dos    2) Multiplica uno    3) Suma uno  ");
@@ -52,7 +52,7 @@ public class App {
                }
 
         //pregunta 3
-    System.out.println("-----------------tercera ronda---------------");
+    System.out.println("-----------------Tercera ronda---------------");
 
         System.out.println("Tercera pregunta:¿Qué tipo de dato almacena verdadero o falso?");
         System.out.println(" 1) Boolean   2) String   3) int   ");
@@ -73,7 +73,7 @@ public class App {
 
 
         //pregunta 1
-    System.out.println("-----------------cuarta ronda---------------");
+    System.out.println("-----------------Cuarta ronda---------------");
     System.out.println("Cuarta pregunta: ¿Cuál es el prefijo que usamos para declarar una constante?");
     System.out.println(" 1) String   2) final   3) static");
     System.out.print("Respuesta: ");
@@ -87,7 +87,7 @@ public class App {
     }
 
         //pregunta2
-    System.out.println("-----------------quinta ronda---------------");
+    System.out.println("-----------------Quinta ronda---------------");
     System.out.println("Quinta pregunta: ¿Qué bucle normalmente recorre un array multidimensional?");
     System.out.println(" 1) int    2) while   3) for");
     System.out.print("Respuesta: ");
@@ -100,8 +100,8 @@ public class App {
             System.out.println(ROJO+"incorrecto"+RESET);
     }   
         //pregunta3
-    System.out.println("-----------------sexta ronda---------------");
-    System.out.println("Quinta pregunta: ¿Cuál de estos NO es un dato primitivo?");
+    System.out.println("-----------------Sexta ronda---------------");
+    System.out.println("Sexta pregunta: ¿Cuál de estos NO es un dato primitivo?");
     System.out.println(" 1) long     2) String   3) char ");
     System.out.print("Respuesta: ");
 
@@ -116,8 +116,8 @@ public class App {
 
 
 
-    System.out.println("-----------------septima ronda---------------");
-    System.out.println("¿Qué comando permite descargar un repositorio remoto por primera vez?");
+    System.out.println("-----------------Septima ronda---------------");
+    System.out.println("Séptima pregunta: ¿Qué comando permite descargar un repositorio remoto por primera vez?");
     System.out.println(" 1) git init     2) git clone   3) git all . ");
     System.out.print("Respuesta: ");
 
@@ -131,8 +131,8 @@ public class App {
         }
 
 
-     System.out.println("-----------------octava ronda---------------");
-    System.out.println("¿Qué comando se utiliza para guardar cambios en el historial de Git?");
+    System.out.println("-----------------Octava ronda---------------");
+    System.out.println("Octava pregunta: ¿Qué comando se utiliza para guardar cambios en el historial de Git?");
     System.out.println(" 1) git push    2) git pull   3) git commit ");
     System.out.print("Respuesta: ");
 
@@ -144,14 +144,44 @@ public class App {
             System.out.println(ROJO+"incorrecto"+RESET);
 
         }
+    // MÁS PREGUNTAS
+    System.out.println("-----------------Novena ronda---------------");
+    System.out.println("Novena pregunta: ¿Qué se debe escribir para salir de un switch?");
+    System.out.println(" 1) break    2) main   3) double ");
+    System.out.print("Respuesta: ");
 
-        //resultado final
-    System.out.println("Respuestas correctas: " + aciertos + " de 6");
+    int respuesta9 = teclado.nextInt();
+    if (respuesta9 == 1){
+        System.out.println(VERDE+"¡Correcto!"+RESET);
+        aciertos++;
+        }else{
+            System.out.println(ROJO+"incorrecto"+RESET);
+    }
+
+    System.out.println("-----------------Décima ronda---------------");
+    System.out.println("Décima pregunta: ¿Qué bucle se debe usar cuando una estructura pide ejecutarse al menos una vez hasta que se cumpla 'x' condición?");
+    System.out.println(" 1) return     2) do while   3) for ");
+    System.out.print("Respuesta: ");
+
+    int respuesta10 = teclado.nextInt();
+    if (respuesta10 == 2){
+        System.out.println(VERDE+"¡Correcto!"+RESET);
+        aciertos++;
+        }else{
+            System.out.println(ROJO+"incorrecto"+RESET);
+    }  
+
+         //resultado final
+    System.out.println("Respuestas correctas: " + aciertos + " de 10");
     System.out.println("Fin del concurso.");
 
      teclado.close();
-     
+    
     }
+    
+    
+
+
 
 
 //color rojo y verde Y RESET 
